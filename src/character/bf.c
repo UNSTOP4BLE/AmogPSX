@@ -79,39 +79,39 @@ typedef struct
 
 //Boyfriend player definitions
 static const CharFrame char_bf_frame[] = {
-	{BF_ArcMain_BF0, {  0,   0, 78,  81}, { 78,  81}}, //0 idle 1
-	{BF_ArcMain_BF0, { 78,   0, 77,  83}, { 77,  83}}, //1 idle 2
-	{BF_ArcMain_BF0, {155,   0, 77,  87}, { 77,  87}}, //2 idle 3
-	{BF_ArcMain_BF0, {  0,  81, 78,  91}, { 78,  91}}, //3 idle 4
-	{BF_ArcMain_BF0, { 78,  83, 78,  93}, { 78,  93}}, //4 idle 5
+	{BF_ArcMain_BF0, {  0,   0, 78,  81}, { 78 - 42,  81}}, //0 idle 1
+	{BF_ArcMain_BF0, { 78,   0, 77,  83}, { 77 - 42,  83}}, //1 idle 2
+	{BF_ArcMain_BF0, {155,   0, 77,  87}, { 77 - 42,  87}}, //2 idle 3
+	{BF_ArcMain_BF0, {  0,  81, 78,  91}, { 78 - 42,  91}}, //3 idle 4
+	{BF_ArcMain_BF0, { 78,  83, 78,  93}, { 78 - 42,  93}}, //4 idle 5
 	
-	{BF_ArcMain_BF0, {156,  87,  76, 93}, { 76,  93}}, //5 left 1
-	{BF_ArcMain_BF1, {  0,   0,  76, 93}, { 76,  93}}, //6 left 2
+	{BF_ArcMain_BF0, {156,  87,  76, 93}, { 76 - 42,  93}}, //5 left 1
+	{BF_ArcMain_BF1, {  0,   0,  76, 93}, { 76 - 42,  93}}, //6 left 2
 	
-	{BF_ArcMain_BF1, {155,  92,  79,  80}, { 78,  80}}, //7 down 1
-	{BF_ArcMain_BF1, {155, 172,  79,  76}, { 78,  76}}, //8 down 2
+	{BF_ArcMain_BF1, {155,  92,  79,  80}, { 78 - 42,  80}}, //7 down 1
+	{BF_ArcMain_BF1, {155, 172,  79,  76}, { 78 - 42,  76}}, //8 down 2
 	
-	{BF_ArcMain_BF1, {  0,  93,  78, 102}, { 77, 102}}, //9 up 1
-	{BF_ArcMain_BF1, { 78,  92,  77,  99}, { 76, 99}}, //10 up 2
+	{BF_ArcMain_BF1, {  0,  93,  78, 102}, { 77 - 42, 102}}, //9 up 1
+	{BF_ArcMain_BF1, { 78,  92,  77,  99}, { 76 - 42, 99}}, //10 up 2
 	
-	{BF_ArcMain_BF1, { 76,   0,  79, 92}, { 76,  92}}, //11 right 1
-	{BF_ArcMain_BF1, {155,   0,  81, 92}, { 78,  92}}, //12 right 2
+	{BF_ArcMain_BF1, { 76,   0,  79, 92}, { 76 - 42,  92}}, //11 right 1
+	{BF_ArcMain_BF1, {155,   0,  81, 92}, { 78 - 42,  92}}, //12 right 2
 	
-	{BF_ArcMain_Peace, {  0,   0,  77, 101}, { 76,  101}}, //13 peace 1
-	{BF_ArcMain_Peace, { 78,   0,  76,  95}, { 75,  95}}, //14 peace 2
-	{BF_ArcMain_Peace, {154,   0,  77,  93}, { 76,  93}}, //15 peace 3
+	{BF_ArcMain_Peace, {  0,   0,  77, 101}, { 76 - 42,  101}}, //13 peace 1
+	{BF_ArcMain_Peace, { 78,   0,  76,  95}, { 75 - 42,  95}}, //14 peace 2
+	{BF_ArcMain_Peace, {154,   0,  77,  93}, { 76 - 42,  93}}, //15 peace 3
 
-	{BF_ArcMain_BF2, { 82,  94,  79, 105}, { 79, 105}}, //20 left miss 1
-	{BF_ArcMain_BF2, {161, 108,  76, 107}, { 76, 107}}, //21 left miss 2
+	{BF_ArcMain_BF2, { 82,  94,  79, 105}, { 79 - 42, 105}}, //20 left miss 1
+	{BF_ArcMain_BF2, {161, 108,  76, 107}, { 76 - 42, 107}}, //21 left miss 2
 	
-	{BF_ArcMain_BF2, {  0,   0,  79,  89}, { 78,  89}}, //22 down miss 1
-	{BF_ArcMain_BF2, { 79,   0,  80,  87}, { 79,  87}}, //23 down miss 2
+	{BF_ArcMain_BF2, {  0,   0,  79,  89}, { 78 - 42,  89}}, //22 down miss 1
+	{BF_ArcMain_BF2, { 79,   0,  80,  87}, { 79 - 42,  87}}, //23 down miss 2
 	
-	{BF_ArcMain_BF2, {159,   0,  81, 108}, { 76,  108}}, //24 up miss 1
-	{BF_ArcMain_BF2, {  0,  89,  82, 108}, { 77, 108}}, //25 up miss 2
+	{BF_ArcMain_BF2, {159,   0,  81, 108}, { 76 - 42,  108}}, //24 up miss 1
+	{BF_ArcMain_BF2, {  0,  89,  82, 108}, { 77 - 42, 108}}, //25 up miss 2
 	
-	{BF_ArcMain_BF3, {  0,   0,  79, 106}, { 76, 106}}, //26 right miss 1
-	{BF_ArcMain_BF3, { 79,   0,  81, 105}, { 78, 105}}, //27 right miss 2
+	{BF_ArcMain_BF3, {  0,   0,  79, 106}, { 76 - 42, 106}}, //26 right miss 1
+	{BF_ArcMain_BF3, { 79,   0,  81, 105}, { 78 - 42, 105}}, //27 right miss 2
 
 	{BF_ArcMain_Dead0, {  0,   0, 128, 128}, { 53,  98}}, //23 dead0 0
 	{BF_ArcMain_Dead0, {128,   0, 128, 128}, { 53,  98}}, //24 dead0 1
@@ -408,7 +408,7 @@ Character *Char_BF_New(fixed_t x, fixed_t y)
 	this->character.health_i = 0;
 	
 	this->character.focus_x = FIXED_DEC(-50,1);
-	this->character.focus_y = (stage.stage_id == StageId_1_4) ? FIXED_DEC(-85,1) : FIXED_DEC(-65,1);
+	this->character.focus_y = FIXED_DEC(-85,1);
 	this->character.focus_zoom = FIXED_DEC(1,1);
 	
 	//Load art

@@ -39,33 +39,32 @@ typedef struct
 
 //Dad character definitions
 static const CharFrame char_dad_frame[] = {
-	{Dad_ArcMain_Idle0, {  0,   0, 106, 192}, { 42, 183+4}}, //0 idle 1
-	{Dad_ArcMain_Idle0, {107,   0, 108, 190}, { 43, 181+4}}, //1 idle 2
-	{Dad_ArcMain_Idle1, {  0,   0, 107, 190}, { 42, 181+4}}, //2 idle 3
-	{Dad_ArcMain_Idle1, {108,   0, 105, 192}, { 41, 183+4}}, //3 idle 4
+	{Dad_ArcMain_Idle0, {  0,   0,  88, 152}, { 32, 152}}, //0 idle 1
+	{Dad_ArcMain_Idle0, { 88,   7,  87, 145}, { 31, 145}}, //1 idle 2
+	{Dad_ArcMain_Idle1, {  0,   7,  87, 147}, { 30, 147}}, //2 idle 3
+	{Dad_ArcMain_Idle1, { 87,   0,  90, 154}, { 32, 154}}, //3 idle 4
 	
-	{Dad_ArcMain_Left, {  0,   0,  93, 195}, { 40, 185+4}}, //4 left 1
-	{Dad_ArcMain_Left, { 94,   0,  95, 195}, { 40, 185+4}}, //5 left 2
+	{Dad_ArcMain_Left, {  0,   0,  86, 155}, { 37, 155}}, //4 left 1
 	
-	{Dad_ArcMain_Down, {  0,   0, 118, 183}, { 43, 174+4}}, //6 down 1
-	{Dad_ArcMain_Down, {119,   0, 117, 183}, { 43, 175+4}}, //7 down 2
+	{Dad_ArcMain_Down, {  0,   0,  94, 144}, { 31, 144}}, //6 down 1
+	{Dad_ArcMain_Down, { 94,   3,  95, 141}, { 31, 141}}, //7 down 2
 	
-	{Dad_ArcMain_Up, {  0,   0, 102, 205}, { 40, 196+4}}, //8 up 1
-	{Dad_ArcMain_Up, {103,   0, 103, 203}, { 40, 194+4}}, //9 up 2
+	{Dad_ArcMain_Up, {  0,   0,  92, 159}, { 30, 159}}, //8 up 1
+	{Dad_ArcMain_Up, { 92,   2,  92, 157}, { 30, 157}}, //9 up 2
 	
-	{Dad_ArcMain_Right, {  0,   0, 117, 199}, { 43, 189+4}}, //10 right 1
-	{Dad_ArcMain_Right, {118,   0, 114, 199}, { 42, 189+4}}, //11 right 2
+	{Dad_ArcMain_Right, {  0,   2, 102, 149}, { 30, 149}}, //10 right 1
+	{Dad_ArcMain_Right, {102,   0, 100, 151}, { 31, 151}}, //11 right 2
 };
 
 static const Animation char_dad_anim[CharAnim_Max] = {
-	{2, (const u8[]){ 1,  2,  3,  0, ASCR_BACK, 1}}, //CharAnim_Idle
-	{2, (const u8[]){ 4,  5, ASCR_BACK, 1}},         //CharAnim_Left
+	{2, (const u8[]){ 0, 1, 2, 3, ASCR_BACK, 0}}, //CharAnim_Idle
+	{2, (const u8[]){ 4, 4, ASCR_BACK, 0}},         //CharAnim_Left
 	{0, (const u8[]){ASCR_CHGANI, CharAnim_Idle}},   //CharAnim_LeftAlt
-	{2, (const u8[]){ 6,  7, ASCR_BACK, 1}},         //CharAnim_Down
+	{2, (const u8[]){ 5, 6, ASCR_BACK, 0}},         //CharAnim_Down
 	{0, (const u8[]){ASCR_CHGANI, CharAnim_Idle}},   //CharAnim_DownAlt
-	{2, (const u8[]){ 8,  9, ASCR_BACK, 1}},         //CharAnim_Up
+	{2, (const u8[]){ 7, 8, ASCR_BACK, 0}},         //CharAnim_Up
 	{0, (const u8[]){ASCR_CHGANI, CharAnim_Idle}},   //CharAnim_UpAlt
-	{2, (const u8[]){10, 11, ASCR_BACK, 1}},         //CharAnim_Right
+	{2, (const u8[]){ 9, 10, ASCR_BACK, 0}},         //CharAnim_Right
 	{0, (const u8[]){ASCR_CHGANI, CharAnim_Idle}},   //CharAnim_RightAlt
 };
 
