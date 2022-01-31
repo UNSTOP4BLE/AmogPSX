@@ -1508,7 +1508,7 @@ void Stage_Tick(void)
 		{
 
 			if (stage.middlescroll)
-				arrowposx = -80;
+				arrowposx = -78;
 			else
 				arrowposx = 0;
 			
@@ -1516,8 +1516,8 @@ void Stage_Tick(void)
 			if (stage.botplay == 1)
 			{
 				//Draw botplay
-				RECT bot_fill = {174,225, 67, 16};
-				RECT_FIXED bot_dst = {FIXED_DEC(-30,1), FIXED_DEC(-60,1), FIXED_DEC(67,1), FIXED_DEC(16,1)};
+				RECT bot_fill = {174, 225, 67, 16};
+				RECT_FIXED bot_dst = {FIXED_DEC(-33,1), FIXED_DEC(-60,1), FIXED_DEC(67,1), FIXED_DEC(16,1)};
 				
 				bot_dst.w = bot_fill.w << FIXED_SHIFT;
 				Stage_DrawTex(&stage.tex_hud0, &bot_fill, &bot_dst, stage.bump);
